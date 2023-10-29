@@ -41,6 +41,6 @@ class elfutils(mama.BuildTarget):
             console('lib/libdw.so and lib/libelf.so already built', color='green')
 
     def package(self):
-        self.export_include('iptables-built/include', build_dir=True)
+        self.export_include('elfutils-built/include', build_dir=True)
         self.export_lib('elfutils-built/lib/libelf.so', build_dir=True)
         self.export_lib('elfutils-built/lib/libdw.so', build_dir=True)
